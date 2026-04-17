@@ -12,7 +12,7 @@ export default function NotFoundPage() {
 
       <div className="relative z-10 max-w-md">
         {/* 404 number */}
-        <div className="font-display text-[120px] sm:text-[160px] font-bold leading-none bg-gradient-to-br from-brand-300 to-brand-600 bg-clip-text text-transparent select-none mb-2">
+        <div className="font-display text-[120px] sm:text-[160px] font-bold leading-none bg-gradient-to-br from-green-500 to-green-500 bg-clip-text text-transparent select-none mb-2">
           404
         </div>
 
@@ -29,18 +29,12 @@ export default function NotFoundPage() {
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
             to="/"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-600 text-white rounded-2xl font-semibold hover:bg-brand-700 shadow-md hover:shadow-lg transition-all duration-200"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-2xl font-semibold hover:bg-green-700 shadow-md hover:shadow-lg transition-all duration-200"
           >
             <Home size={16} />
             Back to Home
           </Link>
-          <button
-            onClick={() => window.history.back()}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-white text-ink-700 rounded-2xl font-semibold border border-ink-200 hover:bg-ink-50 transition-all duration-200"
-          >
-            <ArrowLeft size={16} />
-            Go Back
-          </button>
+          
         </div>
       </div>
     </div>

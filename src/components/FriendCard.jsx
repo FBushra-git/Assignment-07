@@ -6,7 +6,7 @@ export default function FriendCard({ friend }) {
   // 1. Normalize the status to lowercase to prevent typos/casing issues
   const statusKey = friend.status?.toLowerCase().replace(/\s+/g, '') || ''
 
-  // 2. Define classes using your EXACT tailwind.config.js keys (coral, amber, ink)
+ 
   const getStatusClasses = () => {
     switch (statusKey) {
       case 'overdue':
@@ -14,9 +14,9 @@ export default function FriendCard({ friend }) {
       case 'almostdue':
         return 'bg-amber-400 text-white' // Uses your config 'amber'
       case 'ontrack':
-        return 'bg-[#1B4332] text-white' // The deep green from your footer
+        return 'bg-[#244D3F] text-white' // The deep green from your footer
       default:
-        return 'bg-ink-400 text-white'   // Fallback using your 'ink'
+        return 'bg-[#244D3F] text-white'   // Fallback using your 'ink'
     }
   }
 
