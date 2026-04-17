@@ -1,102 +1,32 @@
-# KinKeeper — Friendship Tracker
+# Keen-Keeper
 
-> A premium SaaS-style relationship management app to keep you genuinely connected with the people who matter most.
+**Keep Your Friendships Alive**
 
----
-
-##  Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Framework | React 18 + Vite |
-| Routing | React Router DOM v6 |
-| Styling | Tailwind CSS |
-| Charts | Recharts |
-| Icons | Lucide React |
-| Notifications | React Hot Toast |
-| Data | Local JSON + localStorage |
-| Fonts | Playfair Display + DM Sans |
+KeenKeeper is a dedicated friendship management application designed to help users maintain and nurture their social connections. The platform allows users to track communication gaps, set relationship goals, and monitor interaction frequency through a dynamic status system. With features like a centralized interaction timeline and visual analytics, KeenKeeper ensures that no important friendship is neglected in the hustle of daily life.
 
 ---
 
-##  Key Features
+##  Features
 
-1. **Friend Dashboard** — Track all your friends with status badges (overdue / almost due / on-track), contact frequency goals, and one-click navigation to detailed profiles.
-
-2. **Interaction Timeline** — Log calls, texts, and video chats with one click. Filter by type, sort by date, and search by friend name — all persisted to localStorage.
-
-3. **Friendship Analytics** — Beautiful Recharts pie chart and bar chart showing your interaction distribution and friendship health metrics across your entire network.
+* **Automated Status Tracking**: Features a smart categorization system that labels friendships as **"On-track,"** **"Almost Due,"** or **"Overdue"** based on the last contact date, helping users prioritize their social interactions.
+* **Dynamic Interaction Timeline**: Allows users to log calls, texts, and video chats with a single click from the friend detail page. These interactions are instantly recorded in a filterable timeline with timestamps and specific icons.
+* **Insightful Friendship Analytics**: Provides a clear bird's-eye view of how the user is spending time with their social circle through dashboard statistics and interaction distribution.
 
 ---
 
-##  Getting Started
+##  Technologies Used
 
-```bash
-# 1. Install dependencies
-npm install
-
-# 2. Start development server
-npm run dev
-
-# 3. Build for production
-npm run build
-
-# 4. Preview production build
-npm run preview
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+* **HTML**
+* **Tailwind CSS & DaisyUI** (Styling & UI Components)
+* **JavaScript**
+* **React.js** (Frontend Library)
+* **React Router DOM** (Client-side Routing)
+* **Recharts** (Data Visualization for Stats)
+* **React Toastify** (Real-time Notifications)
+* **React Spinners**
+* **React Icons**
+* **JSON** (Local Data Storage)
+* **Vercel/Netlify** (Project Live/Deployment)
 
 ---
 
-##  Project Structure
-
-```
-src/
-├── components/         # Reusable UI components
-│   ├── Navbar.jsx
-│   ├── Footer.jsx
-│   ├── FriendCard.jsx
-│   ├── StatusBadge.jsx
-│   ├── SummaryCard.jsx
-│   ├── TimelineEntry.jsx
-│   └── LoadingStates.jsx
-├── pages/              # Route-level pages
-│   ├── HomePage.jsx
-│   ├── FriendDetailPage.jsx
-│   ├── TimelinePage.jsx
-│   ├── StatsPage.jsx
-│   └── NotFoundPage.jsx
-├── layouts/
-│   └── MainLayout.jsx
-├── hooks/
-│   ├── useFriends.js
-│   └── useTimeline.js
-├── data/
-│   └── friends.json
-└── utils/
-    └── helpers.js
-```
-
----
-
-##  Deployment
-
-### Netlify
-A `_redirects` file is included in `/public` for SPA routing:
-```
-/* /index.html 200
-```
-
-
-##  Responsive Breakpoints
-
-| Screen | Friends Grid |
-|---|---|
-| Mobile (<640px) | 1 column |
-| Tablet (640–1024px) | 2 columns |
-| Desktop (>1024px) | 3–4 columns |
-
----
-
-Made with  for better friendships.
